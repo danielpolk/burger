@@ -1,5 +1,5 @@
 <div class="container text-center">
-<img src="/assets/img/dp.png" alt="Burger and fries image" width="300">
+  <img src="/assets/img/dp.png" alt="Burger and fries image" width="300">
   <div class="row">
     <div class="col">
       <div class="burgers-not-devoured">
@@ -7,18 +7,18 @@
         <div class="text-left">
           {{#each burgers}}
           {{#unless devoured}}
-<div class="row ">
-	<div class="col not-eaten-section">
-		{{id}}.
-		{{burger_name}}
-	</div>
+          <div class="row ">
+            <div class="col not-eaten-section">
+              {{id}}.
+              {{burger_name}}
+            </div>
 
-	<div class="col">
-		<button class="eat btn btn-danger" data-id="{{id}}" data-newdevour="{{devour}}">
-			Eat ME!
-		</button>
-	</div>
-</div>          {{/unless}}
+            <div class="col">
+              <button class="eat btn btn-danger" data-id="{{id}}" data-newdevour="{{devour}}">
+                Eat ME!
+              </button>
+            </div>
+          </div> {{/unless}}
           {{/each}}
         </div>
       </div>
@@ -31,10 +31,10 @@
             <input type="text" id="burger" name="name">
           </div>
           <div>
-              <br>
-          <button class="btn btn-warning mx-auto" type="submit">Add burger</button>
+            <br>
+            <button class="btn btn-warning mx-auto" type="submit">Add burger</button>
           </div>
-            <div class="form-group mx-auto">
+          <div class="form-group mx-auto">
             <label for="burger">Enter Your Favorite Burger Then Click Submit.</label>
           </div>
         </form>
@@ -47,10 +47,10 @@
         <div>
           {{#each burgers}}
           {{#if devoured}}
-        <div class="col not-eaten-section">
-	{{id}}.
-	{{burger_name}}
-</div>
+          <div class="col not-eaten-section">
+            {{id}}.
+            {{burger_name}}
+          </div>
           {{/if}}
           {{/each}}
         </div>
