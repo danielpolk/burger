@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col">
       <div class="burgers-not-devoured">
-        <h2>Delicious Burgers Hot and Ready!</h2>
+        <h2>Hot and Ready</h2>
         <div class="text-left">
           {{#each burgers}}
           {{#unless devoured}}
@@ -15,7 +15,7 @@
 
             <div class="col">
               <button class="eat btn btn-danger" data-id="{{id}}" data-newdevour="{{devour}}">
-                Eat ME!
+                Eat Me!
               </button>
             </div>
           </div> {{/unless}}
@@ -25,7 +25,7 @@
     </div>
     <div class="col-5 mx-auto">
       <div class="add-burger">
-        <h2>Add a burger!</h2>
+        <h2>Order Burger</h2>
         <form class="create-form">
           <div>
             <input type="text" id="burger" name="name">
@@ -42,7 +42,7 @@
     </div>
     <div class="col" class="text-left">
       <div class="burgers-devoured">
-        <h2>Already eaten. Ask again for your favorite burger!</h2>
+        <h2>Already eaten? Order again!</h2>
 
         <div>
           {{#each burgers}}
